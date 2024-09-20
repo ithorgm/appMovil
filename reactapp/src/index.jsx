@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import Coffe from './components/Coffe';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import Coffe from "./components/Coffe";
+import { Usuarios } from "./components/Usuarios";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  
   <React.StrictMode>
-    <Coffe/>
+    <Usuarios nombre="frank" edad={21} />
   </React.StrictMode>
 );
