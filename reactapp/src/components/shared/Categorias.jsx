@@ -11,13 +11,15 @@ function Categorias() {
 
   return (
     <div className="categorias-container">
-        <h1>categorias</h1>
-      {categorias.map((category, index) => (
-        <div key={index} className="category-card">
-          <img src={category.imageUrl} alt={category.title} className="category-image" />
-          <h3>{category.title}</h3>
-        </div>
-      ))}
+      <h1>Categorías</h1>
+      <div className="categorias-grid">
+        {categorias.map((category, index) => (
+          <div key={index} className="category-card">
+            <img src={category.imageUrl} alt={category.title} className="category-image" />
+            <h3>{category.title}</h3>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
