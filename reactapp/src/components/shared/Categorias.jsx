@@ -1,6 +1,9 @@
 import React from 'react';
 import './Categorias.css';
 
+
+
+
 function Categorias() {
   const categorias = [
     { title: 'Por hacer', imageUrl: 'path_to_image1' },
